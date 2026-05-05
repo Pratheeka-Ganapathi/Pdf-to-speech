@@ -19,7 +19,7 @@ Seven metrics across three stages.
 **Stage 3, system:**
 - System Health, harmonic mean of (1 - WER), MOS/5, and a success indicator from F1.
 
-The full math is in [`docs/benchmark-metrics.docx`](../docs/benchmark-metrics.docx).
+The full math is in [`docs/benchmark-metrics.pdf`](../docs/benchmark-metrics.pdf).
 
 ## Run it
 
