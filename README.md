@@ -24,18 +24,18 @@ The dashboard in [`benchmark/`](benchmark/) is what computed all of these. Appro
 
 | Run | Approach | Version | Pre-Analysis | Post-Analysis | TTS | F1 | WER | Latency | Health | Noise | What changed |
 | --- | :---: | :---: | --- | --- | :---: | ---: | ---: | ---: | ---: | :---: | --- |
-| RUN-0005 | A | v1 | - | PyMuPDF | Edge | 1.00 | 0.0% | 25 ms | 1.00 | 5/5 | Baseline on the synthetic benchmark PDF |
-| RUN-0004 | A | v1 | - | PyMuPDF | Edge | 0.84 | 2.9% | 463 ms | 0.74 | 0/4 | First real book, noise leaked through |
-| RUN-0006 | A | v1 | - | PyMuPDF | Edge | 0.84 | 2.9% | 478 ms | 0.85 | 0/4 | Same pattern on a second book |
-| RUN-0007 | B | v2 | PyMuPDF | Gemini | Edge | 0.87 | 18.5% | 559 ms | 0.80 | 0/4 | Gemini post-processor added |
-| RUN-0008 | B | v2 | PyMuPDF | Gemini | Edge | 0.87 | 18.5% | 448 ms | 0.80 | 0/4 | Repeated, same numbers |
-| RUN-0010 | B | v2 | PyMuPDF | Gemini | Edge | 1.00 | 0.0% | 10408 ms | 0.72 | 5/5 | First trial with layout calibration |
-| RUN-0016 | C | v2 | Gemini | PyMuPDF | Edge | 1.00 | 0.0% | 23814 ms | 0.85 | 5/5 | Calibration moved upstream, F1 stays at 1.00 |
-| RUN-0018 | C | v2 | Gemini | PyMuPDF | Edge | 1.00 | 15.1% | 25803 ms | 0.81 | 0/4 | Tracked the WER plateau to text normalization |
-| RUN-0019 | D | v2 | Gemini | PyMuPDF | Kokoro | 1.00 | 15.1% | 25752 ms | 0.81 | 0/4 | Switched from Edge-TTS to Kokoro |
-| RUN-0023 | D | v2 | Gemini | PyMuPDF | Kokoro | 1.00 | 18.4% | 27189 ms | 0.80 | 0/4 | Kokoro reproduced |
-| RUN-0026 | E | v3 | Gemini | - | Kokoro | 1.00 | 15.1% | 23187 ms | 0.81 | 0/4 | Dropped PyMuPDF entirely |
-| **RUN-0034** | **F** | **v3** | **pdf2image** | **Gemini** | **Kokoro** | **1.00** | **15.1%** | **32730 ms** | **0.81** | **0/4** | **production** |
+| RUN-0001 | A | v1 | - | PyMuPDF | Edge | 1.00 | 0.0% | 25 ms | 1.00 | 5/5 | Baseline on the synthetic benchmark PDF |
+| RUN-0002 | A | v1 | - | PyMuPDF | Edge | 0.84 | 2.9% | 463 ms | 0.74 | 0/4 | First real book, noise leaked through |
+| RUN-0003 | A | v1 | - | PyMuPDF | Edge | 0.84 | 2.9% | 478 ms | 0.85 | 0/4 | Same pattern on a second book |
+| RUN-0004 | B | v2 | PyMuPDF | Gemini | Edge | 0.87 | 18.5% | 559 ms | 0.80 | 0/4 | Gemini post-processor added |
+| RUN-0005 | B | v2 | PyMuPDF | Gemini | Edge | 0.87 | 18.5% | 448 ms | 0.80 | 0/4 | Repeated, same numbers |
+| RUN-0006 | B | v2 | PyMuPDF | Gemini | Edge | 1.00 | 0.0% | 10408 ms | 0.72 | 5/5 | First trial with layout calibration |
+| RUN-0007 | C | v2 | Gemini | PyMuPDF | Edge | 1.00 | 0.0% | 23814 ms | 0.85 | 5/5 | Calibration moved upstream, F1 stays at 1.00 |
+| RUN-0008 | C | v2 | Gemini | PyMuPDF | Edge | 1.00 | 15.1% | 25803 ms | 0.81 | 0/4 | Tracked the WER plateau to text normalization |
+| RUN-0009 | D | v2 | Gemini | PyMuPDF | Kokoro | 1.00 | 15.1% | 25752 ms | 0.81 | 0/4 | Switched from Edge-TTS to Kokoro |
+| RUN-0010 | D | v2 | Gemini | PyMuPDF | Kokoro | 1.00 | 18.4% | 27189 ms | 0.80 | 0/4 | Kokoro reproduced |
+| RUN-0011 | E | v3 | Gemini | - | Kokoro | 1.00 | 15.1% | 23187 ms | 0.81 | 0/4 | Dropped PyMuPDF entirely |
+| **RUN-0012** | **F** | **v3** | **pdf2image** | **Gemini** | **Kokoro** | **1.00** | **15.1%** | **32730 ms** | **0.81** | **0/4** | **production** |
 
 A few things worth knowing about these numbers.
 
