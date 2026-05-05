@@ -45,7 +45,7 @@ The 15.1% WER plateau in C through F isn't extraction error. Gemini lightly norm
 
 v3 ships not because it's more accurate (it isn't, the numbers are the same as v2's calibrated runs) but because it's a third of the code. v2 needs a 1,200-line pipeline (TOC parser, font detector, repetition filter, positional filter) to make sense of PyMuPDF's spatial output. v3 throws all that away and asks Gemini to do it.
 
-Full engineering writeup is in [`docs/technical-report.docx`](docs/technical-report.docx). The 7 metrics and how they're computed are in [`docs/benchmark-metrics.docx`](docs/benchmark-metrics.docx).
+Full engineering writeup is in [`docs/technical-report.pdf`](docs/technical-report.pdf). The 7 metrics and how they're computed are in [`docs/benchmark-metrics.pdf`](docs/benchmark-metrics.pdf).
 
 ## Layout
 
