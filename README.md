@@ -34,8 +34,8 @@ The dashboard in [`benchmark/`](benchmark/) is what computed all of these. Appro
 | RUN-0008 | C | v2 | Gemini | PyMuPDF | Edge | 1.00 | 15.1% | 25803 ms | 0.81 | 0/4 | Tracked the WER plateau to text normalization |
 | RUN-0009 | D | v2 | Gemini | PyMuPDF | Kokoro | 1.00 | 15.1% | 25752 ms | 0.81 | 0/4 | Switched from Edge-TTS to Kokoro |
 | RUN-0010 | D | v2 | Gemini | PyMuPDF | Kokoro | 1.00 | 18.4% | 27189 ms | 0.80 | 0/4 | Kokoro reproduced |
-| RUN-0012 | E | v3 | Gemini | - | Kokoro | 1.00 | 15.1% | 23187 ms | 0.81 | 0/4 | Dropped PyMuPDF entirely |
-| **RUN-0013** | **F** | **v3** | **pdf2image** | **Gemini** | **Kokoro** | **1.00** | **15.1%** | **32730 ms** | **0.81** | **0/4** | **production** |
+| RUN-0011 | E | v3 | Gemini | - | Kokoro | 1.00 | 15.1% | 23187 ms | 0.81 | 0/4 | Dropped PyMuPDF entirely |
+| **RUN-0012** | **F** | **v3** | **pdf2image** | **Gemini** | **Kokoro** | **1.00** | **15.1%** | **32730 ms** | **0.81** | **0/4** | **production** |
 
 A few things worth knowing about these numbers.
 
