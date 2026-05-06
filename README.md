@@ -18,7 +18,7 @@ I went through three fairly different architectures while building this. All thr
 
 ## Benchmark results
 
-17 runs against the same evaluation harness while iterating. Production (RUN-0034) hits F1 = 1.00, System Health = 81.2%, around $0.015 per 256-page book.
+12 runs against the same evaluation harness while iterating. Production (RUN-0012) hits F1 = 1.00, System Health = 81.2%, around $0.015 per 256-page book.
 
 The dashboard in [`benchmark/`](benchmark/) is what computed all of these. Approach codes: **A** = PyMuPDF only, **B** = PyMuPDF + Gemini post-processor with no calibration, **C** = Gemini calibration with PyMuPDF + Edge-TTS, **D** = same with Kokoro, **E** = pure Gemini, **F** = pdf2image + Gemini (the production version).
 
